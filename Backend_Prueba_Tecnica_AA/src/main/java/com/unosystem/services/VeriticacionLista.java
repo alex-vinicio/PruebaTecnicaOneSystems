@@ -1,0 +1,17 @@
+package com.unosystem.services;
+
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.List;
+
+public class VeriticacionLista {
+
+    // verifica que la lista creada de tipo clase no contenga otros valores que no
+    // pertenescan a la clase que toma la lista
+    public static <T> List<T> castList(Class<? extends T> clazz, Collection<?> c) {
+        List<T> r = new ArrayList<T>(c.size());
+        for (Object o : c)
+            r.add(clazz.cast(o));
+        return r;
+    }
+}
