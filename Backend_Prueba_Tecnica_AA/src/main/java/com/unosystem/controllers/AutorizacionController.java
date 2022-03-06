@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @CrossOrigin(origins = "*") // permite que se pueda consumir desde cualquier origen
-@RequestMapping("api")
+@RequestMapping("/api")
 public class AutorizacionController {
 
     @Autowired

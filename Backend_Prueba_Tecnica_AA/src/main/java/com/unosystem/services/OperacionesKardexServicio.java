@@ -94,7 +94,7 @@ public class OperacionesKardexServicio {
                             operacionKardex.setPrecioUnitario(valAnteriores[1]);
                             // se actualiza setSaldoTotal, stock y precio U de la hoja de kardex
                             operacionKardexDao.registrarOperacionKardex(operacionKardex);
-                            return "Ok";
+                            return "OK";
                         } else {
                             return "No hay suficiente stock";
                         }
